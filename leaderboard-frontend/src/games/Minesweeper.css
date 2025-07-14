@@ -1,0 +1,125 @@
+/* Minesweeper.css */
+.minesweeper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222; /* Contoh background gelap */
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  color: #ccc;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+.description {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.play-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #007bff; /* Warna tombol biru */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #0056b3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  gap: 2px;
+  margin-top: 10px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #888;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+.cell.revealed {
+  background-color: #ccc;
+  cursor: default;
+  color: #333;
+}
+
+.cell.flagged {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #5cb85c; /* Warna tombol coba lagi */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(8, 30px);
+  }
+
+  .cell {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .play-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+.cell.revealed {
+  background-color: #ccc;
+  cursor: default;
+  color: #333;
+  transition: background-color 0.3s ease;
+}

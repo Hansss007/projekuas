@@ -1,0 +1,31 @@
+.game-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .game-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .game-card {
+    background-color: #272727;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    width: 150px;
+  }
+  
+  .game-card:hover {
+    background-color: #444;
+  }
+  

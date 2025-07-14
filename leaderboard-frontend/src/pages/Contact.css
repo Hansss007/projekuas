@@ -1,0 +1,36 @@
+.page-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #218838;
+  }
+  

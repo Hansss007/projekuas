@@ -1,0 +1,86 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+    background-color: #272727;
+  }
+  
+  .welcome-text {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .welcome-text h1 {
+    margin-bottom: 10px;
+  }
+  
+  .games-list {
+    display: flex;
+    flex-wrap: wrap; /* Membuat ikon-ikon wrap ke baris berikutnya jika tidak cukup ruang */
+    justify-content: center; /* Membuat ikon-ikon di tengah */
+    gap: 20px; /* Jarak antar ikon */
+    max-width: 800px; /* Lebar maksimum container ikon */
+  }
+  
+  .game-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out; /* Efek hover */
+  }
+  
+  .game-icon:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+  }
+  
+  .game-icon img {
+    width: 80px; /* Sesuaikan ukuran ikon */
+    height: 80px; /* Sesuaikan ukuran ikon */
+    margin-bottom: 5px;
+    border-radius: 8px; /* Membuat sudut ikon sedikit melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan tipis */
+  }
+  
+  .game-icon span {
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    .home-container {
+      padding-top: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .games-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .game-icon img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .game-icon span {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .welcome-text h1 {
+      font-size: 20px;
+    }
+  
+    .welcome-text p {
+      font-size: 14px;
+    }
+  }
+  
